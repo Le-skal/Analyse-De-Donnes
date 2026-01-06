@@ -236,6 +236,31 @@ X_train, X_test, y_train, y_test = train_test_split(
 - Risque d'overfitting si mal paramétré
 
 ---
+Accuracy: Proportion de prédictions correctes. Peut être trompeuse.
+
+Precision: Évite les faux positifs (refuser à tort un bon client).
+
+Recall: Minimise les faux négatifs (accepter à tort un mauvais client).
+
+F1-Score: Équilibre Precision et Recall, idéal pour données déséquilibrées.
+
+AUC-ROC: Mesure la capacité de discrimination du modèle, indépendamment du seuil.
+
+---
+
+1. Ajustement des poids
+
+"On augmente la pénalité quand le modèle se trompe sur un défaut. Cela force le modèle à être plus attentif à la classe minoritaire."
+
+2. Matrice de confusion
+
+"On analyse en détail les 4 types de prédictions : vrais positifs, vrais négatifs, faux positifs et faux négatifs. Cela nous montre exactement où le modèle se trompe."
+
+3. Priorité au Recall
+
+"Dans le contexte bancaire, rater un défaut (faux négatif) coûte beaucoup plus cher que refuser un bon client (faux positif). On optimise donc le Recall pour détecter un maximum de défauts, même si cela augmente légèrement les fausses alertes."
+
+---
 
 ## **RÉSUMÉ POUR TA PRÉSENTATION**
 
