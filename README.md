@@ -236,15 +236,18 @@ X_train, X_test, y_train, y_test = train_test_split(
 - Risque d'overfitting si mal paramétré
 
 ---
-Accuracy: Proportion de prédictions correctes. Peut être trompeuse.
+Accuracy: Proportion de prédictions correctes. Peut être trompeuse (si le model prédit toujours 'remboursé' aurait 78% d'accuracy).
 
 Precision: Évite les faux positifs (refuser à tort un bon client).
 
 Recall: Minimise les faux négatifs (accepter à tort un mauvais client).
 
-F1-Score: Équilibre Precision et Recall, idéal pour données déséquilibrées.
+F1-Score: Équilibre Precision et Recall, idéal pour données déséquilibrées (penalise un desecilibre entre prevision et recall).
 
 AUC-ROC: Mesure la capacité de discrimination du modèle, indépendamment du seuil.
+
+AUC mesure : "Le modèle sait-il CLASSER correctement ?"
+Accuracy mesure : "Le modèle PRÉDIT-il correctement avec CE seuil ?"
 
 ---
 
